@@ -1,0 +1,11 @@
+{
+  "name": "SMD Labs",
+  "short_name": "SMDLabs",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#2196F3",
+  "description": "SMD 2026 Lab Assignments",
+  "orientation": "portrait-primary",
+  "prefer_related_applications": false
+}
