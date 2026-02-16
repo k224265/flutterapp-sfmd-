@@ -99,7 +99,7 @@ class _LandscapeLayout extends StatelessWidget {
                     color: const Color(0xFFF9F5FD),
                     child: ListView.builder(
                       padding: const EdgeInsets.symmetric(vertical: 8),
-                      itemCount: 5,
+                      itemCount: 10,
                       itemBuilder: (context, index) {
                         return _ContentListItem(index: index + 1);
                       },
@@ -123,6 +123,7 @@ class _PortraitLayout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         title: const Text('Adaptive Layout'),
         backgroundColor: Colors.white,
@@ -198,15 +199,12 @@ class _PortraitLayout extends StatelessWidget {
 
           // List items
           Expanded(
-            child: Container(
-              color: const Color(0xFFF9F5FD),
-              child: ListView.builder(
-                padding: const EdgeInsets.symmetric(vertical: 8),
-                itemCount: 5,
-                itemBuilder: (context, index) {
-                  return _ContentListItem(index: index + 1);
-                },
-              ),
+            child: ListView.builder(
+              padding: const EdgeInsets.symmetric(vertical: 8),
+              itemCount: 10,
+              itemBuilder: (context, index) {
+                return _ContentListItem(index: index + 1);
+              },
             ),
           ),
         ],
